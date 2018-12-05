@@ -25,3 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+Au démarrage de l'application vous arrivez sur la page Nouveau joueur.
+Ensuite, vous avez la page 'game' ou pouvez jouer au Chifoumi.
+Et je ne suis pas arrivé à faire le classement des joueurs, suite à cela sur la page classement des joueurs il n'y a que les prénoms des joueurs qui s'affichent.

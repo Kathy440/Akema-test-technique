@@ -1,0 +1,11 @@
+<br />
+<div>
+  <div class="col-xs-12">
+    <h2>Classement des joueurs</h2>
+    <div class="list-group">
+      <div class="list-group-item" *ngFor="let player of players; let i = index">
+        <h3 class="list-group-item-heading">{{ player.name }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

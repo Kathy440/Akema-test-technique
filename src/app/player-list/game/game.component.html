@@ -1,0 +1,51 @@
+<div>
+  <h1 class="titre_game">Jouer a pierre feuille papier ciseaux</h1>
+  <br />
+  <h2>Faites votre choix</h2>
+  <br />
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="">
+      <button
+        class="bouton_game"
+        type="button"
+        *ngFor="let image of listImages; let i = index"
+        (click)="playerSelection(image.id)"
+      >
+        <div>
+          <img class="" src="{{image.url}}" alt="Card image cap" style="width:100%" />
+          <div class="">
+            <p class="">{{ image.title }}</p>
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="thumbnail">
+      <img class="image_resultat" src="{{computerSelection?.url}}" />
+      <p>{{ computerSelection?.title }}</p>
+    </div>
+  </div>
+</div>
+<hr />
+<table>
+  <thead>
+    <tr>
+      <td *ngIf="result"><strong>Résulats</strong></td>
+      <td><strong>Score du joueur</strong></td>
+      <td><strong>Score de l'ordinateur</strong></td>
+      <td><strong>Egaliter</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td *ngIf="result" class="resultat_score">{{ result }}</td>
+      <td *ngIf="scoreJoueur">{{ scoreJoueur }}</td>
+      <td *ngIf="scoreComputer">{{ scoreComputer }}</td>
+      <td *ngIf="equal">{{ equal }}</td>
+    </tr>
+  </tbody>
+</table>

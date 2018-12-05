@@ -1,0 +1,27 @@
+.titre_game {
+  text-align: center;
+}
+
+.bouton_game {
+  width: 33.33%;
+}
+.img {
+  width: 100%;
+}
+
+.image_resultat {
+  border: 1px solid;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.resultat_score {
+  color: blue;
+}

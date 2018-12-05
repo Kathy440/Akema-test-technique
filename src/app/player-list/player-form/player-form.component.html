@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2>Nouveau joueur, enregistre toi !</h2>
+    <form [formGroup]="playerForm" (ngSubmit)="onSavePlayer()">
+      <div class="form-group">
+        <label for="name">Pseudo</label>
+        <input type="text" id="name" class="form-control" formControlName="name" placeholder="Entrer votre pseudo" />
+      </div>
+      <button class="btn btn-success" [disabled]="playerForm.invalid" type="submit">Enregistrer</button>
+    </form>
+  </div>
+</div>
